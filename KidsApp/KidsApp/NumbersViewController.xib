@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NumbersViewController">
+            <connections>
+                <outlet property="pageController" destination="AIH-ol-63u" id="HLY-X9-L4f"/>
+                <outlet property="scrollView" destination="pnj-2e-Prk" id="1r8-yt-o6e"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="lionboard.png" translatesAutoresizingMaskIntoConstraints="NO" id="EtU-xV-tef">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXu-nx-qms">
+                    <rect key="frame" x="358" y="799" width="46" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.52643939179999999" blue="0.215438566" alpha="0.53000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Return">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="homeBtn:" destination="-1" eventType="touchUpInside" id="Spa-Tw-GBC"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnj-2e-Prk">
+                    <rect key="frame" x="45" y="304" width="283" height="165"/>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="AIH-ol-63u">
+                    <rect key="frame" x="167" y="762" width="39" height="37"/>
+                    <color key="pageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="AIH-ol-63u" secondAttribute="bottom" constant="97" id="CAQ-63-wEG"/>
+                <constraint firstAttribute="trailing" secondItem="pnj-2e-Prk" secondAttribute="trailing" constant="86" id="E6B-eu-9j6"/>
+                <constraint firstItem="AIH-ol-63u" firstAttribute="centerX" secondItem="pnj-2e-Prk" secondAttribute="centerX" id="FPF-wU-dc2"/>
+                <constraint firstItem="pnj-2e-Prk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="304" id="Ntg-6H-O2P"/>
+                <constraint firstItem="EtU-xV-tef" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jon-CZ-Zcb"/>
+                <constraint firstAttribute="bottom" secondItem="iXu-nx-qms" secondAttribute="bottom" constant="67" id="kHX-Ui-Nzy"/>
+                <constraint firstAttribute="bottom" secondItem="pnj-2e-Prk" secondAttribute="bottom" constant="427" id="mDN-ar-Sbf"/>
+                <constraint firstAttribute="trailing" secondItem="iXu-nx-qms" secondAttribute="trailing" constant="10" id="nyN-2c-ghO"/>
+                <constraint firstItem="EtU-xV-tef" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rEl-4a-9KM"/>
+                <constraint firstItem="pnj-2e-Prk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="45" id="rSI-Lb-T2V"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lionboard.png" width="320" height="568"/>
+    </resources>
+</document>
